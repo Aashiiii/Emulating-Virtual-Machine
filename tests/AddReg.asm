@@ -1,0 +1,6 @@
+FUNC LABEL 0
+    MOV REG 0 VAL 2
+    MOV REG 1 VAL 3
+    ADD REG 0 REG 1
+    PRINT REG 0
+    RET

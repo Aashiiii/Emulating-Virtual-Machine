@@ -1,0 +1,217 @@
+Important -> Some of the tests depend on each other. For example the test
+ add register is also using print opcode. So if print opcode has some
+ issue, then add register test would also fail. 
+ All the tests have print opcode, to check the execution result. 
+ If the print opcode is not working correctly, then all the tests would fail. 
+ I have created tests for all the basic opcode executions, and integrated
+ complex programs. The simple opcode testing programs can help pointout
+ which opcode is not working correctly. 
+ The tests try to cover all kind of values one can encounter.
+
+Test 1:
+AddReg -> This function tests the functionality of code in the case
+when the program code includes add opcode. It checks that the 
+disassembler prints the correct program code or not. It also checks
+whether the code executes the program code for add two registers
+correctly or not.
+
+
+Test 2:
+ComplexFunctionCalls -> This function tests the functionality of code 
+in the case when there are multiple functions which call 
+multiple function. It checks that the disassembler prints the
+correct program code or not. It also checks whether the code executes 
+the program code correctly or not.
+
+
+Test 3:
+equOpcode -> This function tests the functionality of code in the case
+when the program code includes equ opcode. It checks that the 
+disassembler prints the correct program code or not. It also checks
+whether the code executes the program code for equ register
+correctly or not.
+
+
+Test 4:
+mixedOrderFunc -> This function tests the functionality of code in the 
+case when the program code includes functions in mixed order, that is
+the function labels are not in increasing order. It checks that the 
+disassembler prints the correct program code or not. It also checks
+whether the code executes the program code correctly or not.
+
+
+Test 5:
+MovRegPtr -> This function tests the functionality of code in the case
+when the program code includes move register pointer. It checks that the 
+disassembler prints the correct program code or not. It also checks
+whether the code executes the program code for move register pointer
+correctly or not.
+
+
+Test 6:
+MovRegReg -> This function tests the functionality of code in the case
+when the program code includes move register register. It checks that the 
+disassembler prints the correct program code or not. It also checks
+whether the code executes the program code for move register register
+correctly or not.
+
+
+Test 7:
+MovRegStk -> This function tests the functionality of code in the case
+when the program code includes move register stack. It checks that the 
+disassembler prints the correct program code or not. It also checks
+whether the code executes the program code for move register stack
+correctly or not.
+
+
+Test 8:
+MovRegVal -> This function tests the functionality of code in the case
+when the program code includes move register value. It checks that the 
+disassembler prints the correct program code or not. It also checks
+whether the code executes the program code for move register value
+correctly or not.
+
+
+Test 9:
+MovStkPtr -> This function tests the functionality of code in the case
+when the program code includes move stack pointer. It checks that the 
+disassembler prints the correct program code or not. It also checks
+whether the code executes the program code for move stack pointer
+correctly or not.
+
+
+Test 10:
+MovStkReg -> This function tests the functionality of code in the case
+when the program code includes move stack register. It checks that the 
+disassembler prints the correct program code or not. It also checks
+whether the code executes the program code for move stack register
+correctly or not.
+
+
+Test 11:
+MovStkStk -> This function tests the functionality of code in the case
+when the program code includes move stack stack. It checks that the 
+disassembler prints the correct program code or not. It also checks
+whether the code executes the program code for move stack stack
+correctly or not.
+
+
+Test 12:
+MovStkVal -> This function tests the functionality of code in the case
+when the program code includes move stack value. It checks that the 
+disassembler prints the correct program code or not. It also checks
+whether the code executes the program code for move stack value
+correctly or not.
+
+
+Test 13:
+notOpcode -> This function tests the functionality of code in the case
+when the program code includes not opcode. It checks that the 
+disassembler prints the correct program code or not. It also checks
+whether the code executes the program code for not register
+correctly or not.
+
+
+Test 14:
+NotResetAfterCal -> This function tests that the register values
+and stack values should not be reset between function calls.
+It checks that the disassembler prints the correct program code or not. 
+It also checks whether the code executes the program code correctly or not.
+
+
+Test 15:
+PrintPtr -> This function tests the functionality of code in the case
+when the program code includes print pointer. It checks that the 
+disassembler prints the correct program code or not. It also checks
+whether the code executes the program code for print pointer
+correctly or not.
+
+
+Test 16:
+PrintReg -> This function tests the functionality of code in the case
+when the program code includes print register. It checks that the 
+disassembler prints the correct program code or not. It also checks
+whether the code executes the program code for print register
+correctly or not.
+
+
+Test 17:
+PrintStk -> This function tests the functionality of code in the case
+when the program code includes print stack. It checks that the 
+disassembler prints the correct program code or not. It also checks
+whether the code executes the program code for print stack
+correctly or not.
+
+
+Test 18:
+PrintVal -> This function tests the functionality of code in the case
+when the program code includes print value. It checks that the 
+disassembler prints the correct program code or not. It also checks
+whether the code executes the program code for print value
+correctly or not.
+
+
+Test 19:
+RefPtrPtr -> This function tests the functionality of code in the case
+when the program code includes ref pointer pointer. It checks that the 
+disassembler prints the correct program code or not. It also checks
+whether the code executes the program code for ref pointer pointer
+correctly or not.
+
+
+Test 20:
+RefPtrStk -> This function tests the functionality of code in the case
+when the program code includes ref pointer stack. It checks that the 
+disassembler prints the correct program code or not. It also checks
+whether the code executes the program code for ref pointer stack
+correctly or not.
+
+
+Test 21:
+RefRegPtr -> This function tests the functionality of code in the case
+when the program code includes ref register pointer. It checks that the 
+disassembler prints the correct program code or not. It also checks
+whether the code executes the program code for ref register pointer
+correctly or not.
+
+
+Test 22:
+RefRegStk -> This function tests the functionality of code in the case
+when the program code includes ref register stack. It checks that the 
+disassembler prints the correct program code or not. It also checks
+whether the code executes the program code for ref register stack
+correctly or not.
+
+
+Test 23:
+RefStkPtr -> This function tests the functionality of code in the case
+when the program code includes ref stack pointer. It checks that the 
+disassembler prints the correct program code or not. It also checks
+whether the code executes the program code for ref stack pointer
+correctly or not.
+
+
+Test 24:
+RefStkStk -> This function tests the functionality of code in the case
+when the program code includes ref stack stack. It checks that the 
+disassembler prints the correct program code or not. It also checks
+whether the code executes the program code for ref stack stack
+correctly or not.
+
+
+Test 25:
+simpleFunctionCalls -> This function tests the functionality of the
+code, in case of a simple function call. It checks that the 
+disassembler prints the correct program code or not. It also checks
+whether the code executes the program code correctly or not.
+
+
+Test 26:
+stackSymbols -> This function tests that the stack symbols only
+exist within the scope of the current function or not. It checks that 
+the disassembler prints the correct program code or not. It also checks
+whether the code executes the program code correctly or not.
+
+
+
+
